@@ -1,8 +1,19 @@
-<div class="image">
-<img src="{{ url_for('static', filename='bg.jpg')}}" alt="image"/>
+<div class="background">
+    {% include 'background.html' %}
 </div>
 
 <div class="about">
-    
+    {% include 'about.html' %}
 </div>
 
+<div class="services">
+    {% include 'services.html' %}
+</div>
+
+<div class="skills">
+    {% include 'skills.html' %}
+</div>
+
+<div class="projects">
+    {% include 'projects.html' %}
+</div>

@@ -3,7 +3,7 @@
     margin: 0;    
 }
 .page{
-    height: 800px;
+      height: 3000px;
       max-width: 1200px;   
       margin: auto;    
       background-color: wheat;                               
@@ -11,7 +11,7 @@
 
 .image img{
     width: 100%;
-    height: 50%;
+    height: 30%;
     top: -30%;
 }
 
@@ -34,8 +34,82 @@
     color: #ffff;
     border-top-left-radius: 40%;
     border-bottom-right-radius: 40%;
-    margin-top: -2%;
-    padding-bottom: 5px;
+    margin-top: -4%;
+    padding-bottom: 10px;
     border:1px solid white;
     
+}
+
+.service-group{
+    display: flex;
+}
+
+.service-items{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #0c0644;
+    height: 200px;
+    width: 100%;
+}
+
+.project-list-1,
+.project-list-2,
+.project-list-3{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-image{
+    margin: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .project-list-1,
+    .project-list-2,
+    .project-list-3{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    .project-list-1,
+    .project-list-2,
+    .project-list-3{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.service-items-list{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-items-list img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.service-items-list p{
+    color: #0c0644;
+    margin: 10px;
+}
+
+.add-feature{
+    padding: 10px;
+    background-color: #0c0644;
+    height: 100px;
+    border-top-left-radius: 50%;
+    color: #ffff;
+}
+
+.add-feature h3{
+    padding: 10px;
+    margin: 10px;
 }
